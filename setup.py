@@ -144,6 +144,7 @@ setup(
         ],
         'dojson.cli': [
             'do = dojson.cli.command:process_do',
+            'del = dojson.cli.command:process_del',
             'missing = dojson.cli.command:process_missing',
             'schema = dojson.cli.command:process_schema',
             'validate = dojson.cli.command:process_validate',

@@ -63,6 +63,19 @@ def process_schema(schema):
     return processor
 
 
+@click.command('del')
+@click.argument('key')
+def process_del(key):
+    """Delete key from an item."""
+    def processor(iterator):
+        for item in iterator:
+            if key in item:
+                del item[key]
+            yield item
+
+    return processor
+
+
 @click.command('validate')
 @click.argument('schema')
 def process_validate(schema):
