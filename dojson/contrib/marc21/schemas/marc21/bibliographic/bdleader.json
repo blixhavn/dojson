@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "leader": {
+            "description": "Leader",
+            "type": "string"
+        }
+    }
+}
